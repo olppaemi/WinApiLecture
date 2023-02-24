@@ -22,6 +22,12 @@
     <Filter Include="Engine\03. Manger\KeyMgr">
       <UniqueIdentifier>{cdb61333-3e4d-4a81-98b8-cfc9fd2aa1b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\04. Object">
+      <UniqueIdentifier>{2205d8e1-16b5-4c77-9640-2cbec5c03edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manger\TimeMgr">
+      <UniqueIdentifier>{3f61ab58-9faa-4e05-abaf-1f3f758561bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="CKeyMgr.cpp">
       <Filter>Engine\03. Manger\KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CObject.cpp">
+      <Filter>Engine\04. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimeMgr.cpp">
+      <Filter>Engine\03. Manger\TimeMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +69,15 @@
       <Filter>Engine\03. Manger\KeyMgr</Filter>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="CObject.h">
+      <Filter>Engine\04. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeMgr.h">
+      <Filter>Engine\03. Manger\TimeMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Client.ico">

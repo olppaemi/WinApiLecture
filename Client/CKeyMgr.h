@@ -2,7 +2,8 @@
 
 class CKeyMgr
 {
-public:
 	SINGLE(CKeyMgr)
+public:
+	void init();
 private:
 };
