@@ -8,12 +8,12 @@ public:
     CMissile();
     ~CMissile();
 
-    void SetDir(bool _bUp);
+    void SetDir(float _fTheta);
 
     virtual void update();
     virtual void render(HDC _dc);
 
 private:
-    float     m_fDir; // 위, 아래 방향
+    float     m_fTheta; // 이동 방향
 };
 

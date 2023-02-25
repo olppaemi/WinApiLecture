@@ -3,7 +3,7 @@
 #include "CTimeMgr.h"
 
 CMissile::CMissile()
-	: m_fDir(1.f)
+	: m_fTheta(PI / 2.f)
 {
 }
 
@@ -11,19 +11,17 @@ CMissile::~CMissile()
 {
 }
 
-void CMissile::SetDir(bool _bUp)
+void CMissile::SetDir(float _fTheta)
 {
-	if (_bUp)
-		m_fDir = -1.f;
-	else
-		m_fDir = 1.f;
+	m_fTheta = _fTheta;
 }
 
 void CMissile::update()
 {
 	Vec2 vPos = GetPos();
 
-	vPos.y += 600.f * fDT * (float)m_fDir;
+	vPos.x += 600.f * cosf(m_fTheta) * fDT;
+	vPos.y -= 600.f * sinf(m_fTheta) * fDT;
 
 	SetPos(vPos);
 }
