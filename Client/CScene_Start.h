@@ -6,5 +6,8 @@ class CScene_Start :
 public:
     CScene_Start();
     ~CScene_Start();
+
+    virtual void Enter();
+    virtual void Exit();
 };
 

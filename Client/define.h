@@ -9,8 +9,8 @@
 							type();						\
 							~type();
 
-#define fDT() CTimeMgr::GetInst()->GetfDT()
-#define DT() CTimeMgr::GetInst()->GetDT()
+#define fDT CTimeMgr::GetInst()->GetfDT()
+#define DT CTimeMgr::GetInst()->GetDT()
 
 enum class GROUP_TYPE
 {

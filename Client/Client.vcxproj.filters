@@ -57,14 +57,14 @@
     <ClCompile Include="CTimeMgr.cpp">
       <Filter>Engine\03. Manger\TimeMgr</Filter>
     </ClCompile>
-    <ClCompile Include="CScene.cpp">
-      <Filter>Engine\05. Scene</Filter>
-    </ClCompile>
     <ClCompile Include="CSceneMgr.cpp">
       <Filter>Engine\03. Manger\SceneMgr</Filter>
     </ClCompile>
     <ClCompile Include="CScene_Start.cpp">
       <Filter>Engine\05. Scene\Scene_Start</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Engine\05. Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -99,14 +99,14 @@
     <ClInclude Include="CTimeMgr.h">
       <Filter>Engine\03. Manger\TimeMgr</Filter>
     </ClInclude>
-    <ClInclude Include="CScene.h">
-      <Filter>Engine\05. Scene</Filter>
-    </ClInclude>
     <ClInclude Include="CSceneMgr.h">
       <Filter>Engine\03. Manger\SceneMgr</Filter>
     </ClInclude>
     <ClInclude Include="CScene_Start.h">
       <Filter>Engine\05. Scene\Scene_Start</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Engine\05. Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
