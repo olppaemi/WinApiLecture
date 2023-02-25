@@ -19,4 +19,3 @@ private:
 public:
 	HWND GetMainHwnd() { return m_hWnd; }
 };
-

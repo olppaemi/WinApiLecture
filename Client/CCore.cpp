@@ -57,12 +57,12 @@ void CCore::update()
 
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		vPos.x -= 0.01f;
+		vPos.x -= 200.f * CTimeMgr::GetInst()->GetfDT();
 	}
 
 	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		vPos.x += 0.01f;
+		vPos.x += 200.f * CTimeMgr::GetInst()->GetfDT();
 	}
 
 	g_obj.SetPos(vPos);
@@ -75,9 +75,9 @@ void CCore::render()
 
 	Rectangle(
 		m_hDC,
-		(int)(vPos.x - vScale.x / 2),
-		(int)(vPos.y - vScale.y / 2),
-		(int)(vPos.x + vScale.x / 2),
-		(int)(vPos.y + vScale.y / 2)
+		(int)(vPos.x - vScale.x / 2.f),
+		(int)(vPos.y - vScale.y / 2.f),
+		(int)(vPos.x + vScale.x / 2.f),
+		(int)(vPos.y + vScale.y / 2.f)
 	);
 }

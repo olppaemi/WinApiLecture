@@ -15,7 +15,6 @@ CTimeMgr::CTimeMgr()
 
 CTimeMgr::~CTimeMgr()
 {
-
 }
 
 void CTimeMgr::init()
@@ -52,3 +51,7 @@ void CTimeMgr::update()
 		SetWindowText(CCore::GetInst()->GetMainHwnd(), szBuffer);
 	}
 }
+
+double CTimeMgr::GetDT() { return m_dDT; }
+
+float  CTimeMgr::GetfDT() { return (float)m_dDT; }
