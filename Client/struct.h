@@ -35,5 +35,20 @@ struct Vec2
 		x = (float)_pt.x;
 		y = (float)_pt.y;
 	}
+
+	float Length() 
+	{
+		return sqrt(x * x + y * y);
+	}
+
+	Vec2& Normalize()
+	{
+		float fLen = Length();
+
+		assert(fLen != 0.f);
+		x /= fLen;
+		y /= fLen;
+		return *this;
+	}
 	
 };
