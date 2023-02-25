@@ -68,3 +68,13 @@ void CCore::progress()
 	BitBlt(m_hDC, 0, 0, m_ptResolution.x, m_ptResolution.y
 		, m_memDC, 0, 0, SRCCOPY);
 }
+
+HWND CCore::GetMainHwnd()
+{
+	return m_hWnd;
+}
+
+POINT CCore::GetResolution()
+{
+	return m_ptResolution;
+}
