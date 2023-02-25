@@ -42,3 +42,8 @@ void CSceneMgr::render(HDC _dc)
 {
 	m_pCurScene->render(_dc);
 }
+
+CScene* CSceneMgr::GetCurScene()
+{
+	return m_pCurScene;
+}
