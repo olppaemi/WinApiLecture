@@ -82,3 +82,8 @@ POINT CCore::GetResolution()
 {
 	return m_ptResolution;
 }
+
+HDC CCore::GetMainDC()
+{
+	return m_hDC;
+}

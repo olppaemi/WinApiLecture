@@ -8,6 +8,7 @@ public:
 	void	progress();
 	HWND	GetMainHwnd();
 	POINT	GetResolution();
+	HDC		GetMainDC();
 
 private:
 	HWND	m_hWnd;				// 메인 윈도우 핸들

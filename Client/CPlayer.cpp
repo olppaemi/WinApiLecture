@@ -6,11 +6,30 @@
 #include "CMissile.h"
 #include "CScene.h"
 #include "CSceneMgr.h"
+#include "CTexture.h"
+#include "CPathMgr.h"
+
+CPlayer::CPlayer()
+	: m_pTex(nullptr)
+{
+	// Texture 로딩하기
+	m_pTex = new CTexture;
+
+	wstring strFilePath = CPathMgr::GetInst()->GetConentPath();
+	strFilePath += L"texture\\Player.bmp";
+	m_pTex->Load(strFilePath);
+}
+
+CPlayer::~CPlayer()
+{
+	if (m_pTex != nullptr)
+		delete m_pTex;
+}
 
 void CPlayer::update()
 {
 	Vec2 vPos = GetPos();
-	
+
 	if (KEY_HOLD(KEY::UP))
 	{
 		vPos.y -= 200.f * fDT;
@@ -37,6 +56,39 @@ void CPlayer::update()
 	}
 
 	SetPos(vPos);
+}
+
+void CPlayer::render(HDC _dc)
+{
+	int iWidth = (int)m_pTex->Width();
+	int iHeight = (int)m_pTex->Height();
+
+	Vec2 vPos = GetPos();
+
+	int(vPos.x - (iWidth / 2.f));
+	int(vPos.x - (iHeight / 2.f));
+
+	/*BitBlt(_dc,
+		int(vPos.x - (iWidth / 2.f)),
+		int(vPos.y - (iHeight / 2.f)),
+		iWidth,
+		iHeight,
+		m_pTex->GetDC(),
+		0,
+		0,
+		SRCCOPY
+	);*/
+
+	TransparentBlt(
+		_dc,
+		int(vPos.x - (iWidth / 2.f)),
+		int(vPos.y - (iHeight / 2.f)),
+		iWidth,
+		iHeight,
+		m_pTex->GetDC(),
+		0, 0, iWidth, iHeight,
+		RGB(255, 0, 255)
+	);
 }
 
 void CPlayer::CreateMissile()

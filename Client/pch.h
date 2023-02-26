@@ -13,5 +13,7 @@ using std::wstring;
 
 #include <cassert>
 
+#pragma comment(lib, "Msimg32.lib")
+
 #include "define.h"
 #include "struct.h"

@@ -5,10 +5,15 @@ class CTexture :
 {
 public:
     void Load(const wstring& _strFilePath);
+    UINT Width();
+    UINT Height();
+    HDC GetDC();
 
 private:
     HDC m_hdc;
     HBITMAP m_hBit;
+    BITMAP m_bitInfo;
+
 public:
     CTexture();
     ~CTexture();

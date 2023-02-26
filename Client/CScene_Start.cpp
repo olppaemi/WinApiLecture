@@ -18,15 +18,6 @@ CScene_Start::~CScene_Start()
 
 void CScene_Start::Enter()
 {
-	// Texture 로딩하기
-	CTexture* pTex = new CTexture;
-
-	wstring strFilePath = CPathMgr::GetInst()->GetConentPath();
-	strFilePath += L"texture\\Player.bmp";
-	pTex->Load(strFilePath);
-
-	delete pTex;
-
 	// Player Object 추가
 	CObject* pObj = new CPlayer;
 	pObj->SetPos(Vec2(640, 384));
