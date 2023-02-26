@@ -50,5 +50,26 @@ struct Vec2
 		y /= fLen;
 		return *this;
 	}
-	
+
+	Vec2 operator+(const Vec2& _vOther)
+	{
+		return Vec2(x + _vOther.x, y + _vOther.y);
+	}
+
+	Vec2 operator-(const Vec2& _vOther)
+	{
+		return Vec2(x - _vOther.x, y - _vOther.y);
+	}
+
+	Vec2 operator*(const Vec2& _vOther)
+	{
+		return Vec2(x * _vOther.x, y * _vOther.y);
+	}
+
+	Vec2 operator/(const Vec2& _vOther)
+	{
+		assert(!(0.f == _vOther.x || 0.f == _vOther.y));
+		return Vec2(x / _vOther.x, y / _vOther.y);
+	}
+
 };

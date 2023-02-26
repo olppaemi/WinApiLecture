@@ -64,6 +64,12 @@
     <Filter Include="Engine\03. Manger\ResMgr">
       <UniqueIdentifier>{21cef4b8-f066-416a-b6fd-f1b60b9f94b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\07. Component">
+      <UniqueIdentifier>{14b3cf85-c571-4ca9-bd34-3260d52381af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\08. Module">
+      <UniqueIdentifier>{6e87d3fe-f3e7-4e9b-bb0b-42f4887cca94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -114,6 +120,10 @@
     <ClCompile Include="CResMgr.cpp">
       <Filter>Engine\03. Manger\ResMgr</Filter>
     </ClCompile>
+    <ClCompile Include="CCollider.cpp">
+      <Filter>Engine\07. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectGDI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CCore.h">
@@ -180,6 +190,10 @@
     <ClInclude Include="CResMgr.h">
       <Filter>Engine\03. Manger\ResMgr</Filter>
     </ClInclude>
+    <ClInclude Include="CCollider.h">
+      <Filter>Engine\07. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectGDI.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Client.ico">

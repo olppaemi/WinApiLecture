@@ -12,6 +12,7 @@ public:
 	const wstring& GetName();
 
 	void update();
+	void finalupdate();
 	void render(HDC _dc);
 
 	void AddObject(CObject* _pObj, GROUP_TYPE _eType);
