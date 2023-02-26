@@ -31,6 +31,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	// TODO: 여기에 코드를 입력합니다.
 
+	// 메모리 릭(누수) 체크
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+	//_crtSetBreakAlloc();
+
 	// 전역 문자열을 초기화합니다.
 	LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
 	LoadStringW(hInstance, IDC_CLIENT, szWindowClass, MAX_LOADSTRING);
@@ -161,8 +165,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 		PAINTSTRUCT ps;
 		HDC hdc = BeginPaint(hWnd, &ps);
-
-		Rectangle(hdc, 1180, 0, 1280, 100);
 
 		EndPaint(hWnd, &ps);
 	}

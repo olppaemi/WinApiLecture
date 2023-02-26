@@ -14,8 +14,10 @@ private:
     HBITMAP m_hBit;
     BITMAP m_bitInfo;
 
-public:
+private:
     CTexture();
     ~CTexture();
+
+    friend class CResMgr;
 };
 

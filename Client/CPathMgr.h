@@ -4,9 +4,9 @@ class CPathMgr
 	SINGLE(CPathMgr)
 public:
 	void init();
-	LPCWCHAR GetConentPath();
+	LPCWCHAR GetContentPath();
 
 private:
-	WCHAR	m_szCountentPath[255];
+	WCHAR	m_szContentPath[255];
 };
 

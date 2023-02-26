@@ -61,6 +61,9 @@
     <Filter Include="Engine\03. Manger\PathMgr">
       <UniqueIdentifier>{e8c1ed2d-4830-4bb4-95cc-19b74be29b6b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\03. Manger\ResMgr">
+      <UniqueIdentifier>{21cef4b8-f066-416a-b6fd-f1b60b9f94b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -107,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="CPathMgr.cpp">
       <Filter>Engine\03. Manger\PathMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CResMgr.cpp">
+      <Filter>Engine\03. Manger\ResMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +176,9 @@
     </ClInclude>
     <ClInclude Include="CPathMgr.h">
       <Filter>Engine\03. Manger\PathMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CResMgr.h">
+      <Filter>Engine\03. Manger\ResMgr</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
