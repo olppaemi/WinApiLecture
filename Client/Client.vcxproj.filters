@@ -49,6 +49,18 @@
     <Filter Include="Engine\04. Object\Missile">
       <UniqueIdentifier>{9906e755-8e4b-4ab9-94f1-b5cd28e2b2e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\06. Resource">
+      <UniqueIdentifier>{21cc9e96-9322-4f02-b033-e139b3d22cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Resource\Texture">
+      <UniqueIdentifier>{03b817e7-3e1d-435c-98be-654d2decafbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Resource\Sound">
+      <UniqueIdentifier>{fc53cae2-8e13-4cec-87bd-23d3a0a9fe83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manger\PathMgr">
+      <UniqueIdentifier>{e8c1ed2d-4830-4bb4-95cc-19b74be29b6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -84,6 +96,18 @@
     <ClCompile Include="CMissile.cpp">
       <Filter>Engine\04. Object\Missile</Filter>
     </ClCompile>
+    <ClCompile Include="CRes.cpp">
+      <Filter>Engine\06. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp">
+      <Filter>Engine\06. Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>Engine\06. Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="CPathMgr.cpp">
+      <Filter>Engine\03. Manger\PathMgr</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CCore.h">
@@ -107,7 +131,6 @@
     <ClInclude Include="CKeyMgr.h">
       <Filter>Engine\03. Manger\KeyMgr</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h" />
     <ClInclude Include="CObject.h">
       <Filter>Engine\04. Object</Filter>
     </ClInclude>
@@ -134,6 +157,19 @@
     </ClInclude>
     <ClInclude Include="CMissile.h">
       <Filter>Engine\04. Object\Missile</Filter>
+    </ClInclude>
+    <ClInclude Include="CRes.h">
+      <Filter>Engine\06. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="CTexture.h">
+      <Filter>Engine\06. Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>Engine\06. Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="CPathMgr.h">
+      <Filter>Engine\03. Manger\PathMgr</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
